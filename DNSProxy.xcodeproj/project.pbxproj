@@ -1,0 +1,421 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		79CA109A2C8B1E87007B2259 /* DNSProxyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CA10992C8B1E87007B2259 /* DNSProxyApp.swift */; };
+		79CA109C2C8B1E87007B2259 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CA109B2C8B1E87007B2259 /* ContentView.swift */; };
+		79CA109E2C8B1E89007B2259 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79CA109D2C8B1E89007B2259 /* Assets.xcassets */; };
+		79CA10A22C8B1E89007B2259 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79CA10A12C8B1E89007B2259 /* Preview Assets.xcassets */; };
+		79CA10B32C8B301E007B2259 /* DNS in Frameworks */ = {isa = PBXBuildFile; productRef = 79CA10B22C8B301E007B2259 /* DNS */; };
+		79CA10B52C8B6B1C007B2259 /* DNSProxyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CA10B42C8B6B1C007B2259 /* DNSProxyService.swift */; };
+		79CA10B72C8B6B87007B2259 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CA10B62C8B6B87007B2259 /* ViewModel.swift */; };
+		79CA10B92C8B6BC8007B2259 /* DNSConversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CA10B82C8B6BC8007B2259 /* DNSConversation.swift */; };
+		79CA10BB2C8B6BE4007B2259 /* MessageItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CA10BA2C8B6BE4007B2259 /* MessageItem.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		79CA10962C8B1E87007B2259 /* DNSProxy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DNSProxy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		79CA10992C8B1E87007B2259 /* DNSProxyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DNSProxyApp.swift; sourceTree = "<group>"; };
+		79CA109B2C8B1E87007B2259 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		79CA109D2C8B1E89007B2259 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		79CA109F2C8B1E89007B2259 /* DNSProxy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DNSProxy.entitlements; sourceTree = "<group>"; };
+		79CA10A12C8B1E89007B2259 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		79CA10B02C8B2FAD007B2259 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.5.sdk/usr/lib/libresolv.tbd; sourceTree = DEVELOPER_DIR; };
+		79CA10B42C8B6B1C007B2259 /* DNSProxyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DNSProxyService.swift; sourceTree = "<group>"; };
+		79CA10B62C8B6B87007B2259 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		79CA10B82C8B6BC8007B2259 /* DNSConversation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DNSConversation.swift; sourceTree = "<group>"; };
+		79CA10BA2C8B6BE4007B2259 /* MessageItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageItem.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		79CA10932C8B1E87007B2259 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79CA10B32C8B301E007B2259 /* DNS in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		79CA108D2C8B1E87007B2259 = {
+			isa = PBXGroup;
+			children = (
+				79CA10982C8B1E87007B2259 /* DNSProxy */,
+				79CA10972C8B1E87007B2259 /* Products */,
+				79CA10AF2C8B2FAD007B2259 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		79CA10972C8B1E87007B2259 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				79CA10962C8B1E87007B2259 /* DNSProxy.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		79CA10982C8B1E87007B2259 /* DNSProxy */ = {
+			isa = PBXGroup;
+			children = (
+				79CA10992C8B1E87007B2259 /* DNSProxyApp.swift */,
+				79CA10BA2C8B6BE4007B2259 /* MessageItem.swift */,
+				79CA10B82C8B6BC8007B2259 /* DNSConversation.swift */,
+				79CA10B42C8B6B1C007B2259 /* DNSProxyService.swift */,
+				79CA10B62C8B6B87007B2259 /* ViewModel.swift */,
+				79CA109B2C8B1E87007B2259 /* ContentView.swift */,
+				79CA109D2C8B1E89007B2259 /* Assets.xcassets */,
+				79CA109F2C8B1E89007B2259 /* DNSProxy.entitlements */,
+				79CA10A02C8B1E89007B2259 /* Preview Content */,
+			);
+			path = DNSProxy;
+			sourceTree = "<group>";
+		};
+		79CA10A02C8B1E89007B2259 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				79CA10A12C8B1E89007B2259 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		79CA10AF2C8B2FAD007B2259 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				79CA10B02C8B2FAD007B2259 /* libresolv.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		79CA10952C8B1E87007B2259 /* DNSProxy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79CA10A52C8B1E89007B2259 /* Build configuration list for PBXNativeTarget "DNSProxy" */;
+			buildPhases = (
+				79CA10922C8B1E87007B2259 /* Sources */,
+				79CA10932C8B1E87007B2259 /* Frameworks */,
+				79CA10942C8B1E87007B2259 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DNSProxy;
+			packageProductDependencies = (
+				79CA10B22C8B301E007B2259 /* DNS */,
+			);
+			productName = DNSProxy;
+			productReference = 79CA10962C8B1E87007B2259 /* DNSProxy.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		79CA108E2C8B1E87007B2259 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					79CA10952C8B1E87007B2259 = {
+						CreatedOnToolsVersion = 15.4;
+						LastSwiftMigration = 1540;
+					};
+				};
+			};
+			buildConfigurationList = 79CA10912C8B1E87007B2259 /* Build configuration list for PBXProject "DNSProxy" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 79CA108D2C8B1E87007B2259;
+			packageReferences = (
+				79CA10B12C8B301E007B2259 /* XCRemoteSwiftPackageReference "DNS" */,
+			);
+			productRefGroup = 79CA10972C8B1E87007B2259 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				79CA10952C8B1E87007B2259 /* DNSProxy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		79CA10942C8B1E87007B2259 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79CA10A22C8B1E89007B2259 /* Preview Assets.xcassets in Resources */,
+				79CA109E2C8B1E89007B2259 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		79CA10922C8B1E87007B2259 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79CA109C2C8B1E87007B2259 /* ContentView.swift in Sources */,
+				79CA109A2C8B1E87007B2259 /* DNSProxyApp.swift in Sources */,
+				79CA10BB2C8B6BE4007B2259 /* MessageItem.swift in Sources */,
+				79CA10B92C8B6BC8007B2259 /* DNSConversation.swift in Sources */,
+				79CA10B72C8B6B87007B2259 /* ViewModel.swift in Sources */,
+				79CA10B52C8B6B1C007B2259 /* DNSProxyService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		79CA10A32C8B1E89007B2259 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		79CA10A42C8B1E89007B2259 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		79CA10A62C8B1E89007B2259 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = DNSProxy/DNSProxy.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DNSProxy/Preview Content\"";
+				DEVELOPMENT_TEAM = 6WCU73Y7FL;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.svedm.DNSProxy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		79CA10A72C8B1E89007B2259 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = DNSProxy/DNSProxy.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DNSProxy/Preview Content\"";
+				DEVELOPMENT_TEAM = 6WCU73Y7FL;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.svedm.DNSProxy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		79CA10912C8B1E87007B2259 /* Build configuration list for PBXProject "DNSProxy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79CA10A32C8B1E89007B2259 /* Debug */,
+				79CA10A42C8B1E89007B2259 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79CA10A52C8B1E89007B2259 /* Build configuration list for PBXNativeTarget "DNSProxy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79CA10A62C8B1E89007B2259 /* Debug */,
+				79CA10A72C8B1E89007B2259 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		79CA10B12C8B301E007B2259 /* XCRemoteSwiftPackageReference "DNS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Bouke/DNS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		79CA10B22C8B301E007B2259 /* DNS */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 79CA10B12C8B301E007B2259 /* XCRemoteSwiftPackageReference "DNS" */;
+			productName = DNS;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 79CA108E2C8B1E87007B2259 /* Project object */;
+}
